@@ -229,7 +229,7 @@ export default function Home() {
             </div>
             <div className="flex items-center gap-4">
               <a
-                href="mailto:nikteplouhov@gmail.com"
+                href="mailto:contact@example.com"
                 className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary"
               >
                 <Mail className="h-4 w-4" />
