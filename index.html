@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>English Language Teacher - Professional English Instruction</title>
+    <title>Nikita Teploukhov - English Teacher</title>
     <style>
         * {
             margin: 0;
@@ -107,35 +107,27 @@
             background-color: #f8fafc;
         }
 
-        .contact-form {
-            max-width: 600px;
+        /* New styles for Google Form integration */
+        .form-container {
+            max-width: 800px;
             margin: 2rem auto 0;
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
-        .form-group {
-            margin-bottom: 1rem;
-        }
-
-        input, textarea {
+        .google-form {
             width: 100%;
-            padding: 0.5rem;
-            margin-top: 0.5rem;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-
-        button {
-            background-color: #1a365d;
-            color: white;
-            padding: 0.75rem 1.5rem;
+            min-height: 600px;
             border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 1rem;
+            border-radius: 8px;
         }
 
-        button:hover {
-            background-color: #2c5282;
+        .form-loading {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
         }
 
         h1 {
@@ -172,13 +164,21 @@
             h2 {
                 font-size: 1.75rem;
             }
+
+            .form-container {
+                padding: 0.5rem;
+            }
+
+            .google-form {
+                min-height: 800px; /* Increased height for mobile */
+            }
         }
     </style>
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <h3>English Teacher</h3>
+            <h3>Nikita Teploukhov</h3>
             <div class="nav-links">
                 <a href="#about">About</a>
                 <a href="#services">Services</a>
@@ -235,22 +235,16 @@
 
     <section id="contact" class="section contact">
         <h2>Contact Me</h2>
-        <div class="contact-form">
-            <form>
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit">Send Message</button>
-            </form>
+        <div class="form-container">
+            <!-- Replace YOUR_GOOGLE_FORM_URL with your actual Google Form URL -->
+            <iframe 
+                class="google-form"
+                src="YOUR_GOOGLE_FORM_URL?embedded=true"
+                frameborder="0" 
+                marginheight="0" 
+                marginwidth="0">
+                <div class="form-loading">Loading...</div>
+            </iframe>
         </div>
     </section>
 </body>
